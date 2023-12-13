@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(75, 83, 83);
+}
+.wraper {
+  height: 50rem;
+  width: 50rem;
+  position: relative;
+  background: linear-gradient(
+    rgb(17, 16, 46),
+    rgb(76, 8, 185),
+    rgb(21, 21, 134),
+    rgb(4, 6, 22)
+  );
+  border-radius: 50%;
+  border: 1rem solid rgb(236, 236, 236);
+  overflow: hidden;
+}
+.moon {
+  height: 5rem;
+  width: 5rem;
+  background-color: rgb(247, 243, 243);
+  position: absolute;
+  transform: translate(450%, 250%);
+  border-radius: 50%;
+}
+.mountain {
+  background: linear-gradient(
+    rgb(9, 4, 58),
+    rgb(48, 35, 117),
+    rgb(14, 22, 92),
+    rgb(16, 16, 77),
+    rgb(17, 17, 43)
+  );
+  height: 35rem;
+  width: 35rem;
+  position: absolute;
+  top: 65%;
+  left: -25%;
+  rotate: 45deg;
+  border-radius: 2rem;
+  z-index: 1;
+}
+.mountain::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    rgb(0, 0, 0),
+    rgb(14, 16, 39),
+    rgb(8, 8, 41),
+    rgb(34, 34, 92)
+  );
+  height: 40rem;
+  width: 45rem;
+  border-radius: 2rem;
+  left: 60%;
+  top: -60%;
+  rotate: 90deg;
+}
+.mountain::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    rgb(8, 6, 44),
+    rgb(12, 12, 71),
+    rgb(23, 23, 87),
+    rgb(14, 14, 114)
+  );
+  height: 40rem;
+  width: 45rem;
+  border-radius: 2rem;
+  left: 20%;
+  top: -15%;
+  rotate: 90deg;
+  border: ;
+}
+.mountain-1 {
+  height: 40rem;
+  width: 40rem;
+  position: absolute;
+  border-radius: 2rem;
+  background: linear-gradient(
+    rgb(13, 14, 82),
+    rgb(8, 39, 51),
+    rgb(6, 6, 34),
+    rgb(3, 3, 36)
+  );
+  z-index: 0;
+  top: 65%;
+  rotate: 45deg;
+  left: 15%;
+}
+.sea {
+  height: 20rem;
+  width: 60rem;
+  position: absolute;
+  background: linear-gradient(
+    rgb(85, 44, 151),
+    rgb(49, 26, 85),
+    rgb(23, 7, 37)
+  );
+  top: 80%;
+  left: -5%;
+  z-index: 2;
+}
+@keyframes{}
